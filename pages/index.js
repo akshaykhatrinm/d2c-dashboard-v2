@@ -8,6 +8,7 @@ import CampaignTable from '../components/CampaignTable';
 import GeminiSummary from '../components/GeminiSummary';
 import { getGeminiPrompt } from '../lib/geminiPrompt';
 import { calculateMetrics } from '../lib/metrics';
+import '../styles/dashboard.css';
 
 export default function Dashboard() {
   const [data, setData] = useState([]);
