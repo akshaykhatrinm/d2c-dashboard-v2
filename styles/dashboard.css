@@ -1,0 +1,71 @@
+/* styles/dashboard.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center; /* Center-align everything */
+}
+
+.dashboard-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.metric-block {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.metric-label {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.metric-value {
+  font-size: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  table-layout: fixed; /* Prevent infinite scroll */
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+  word-wrap: break-word; /* Wrap text */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+th {
+  background: #f2f2f2;
+  font-weight: 700;
+}
+
+.pie-chart-container {
+  margin: 0 auto;
+  max-width: 400px;
+}
