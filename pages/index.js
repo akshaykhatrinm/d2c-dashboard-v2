@@ -25,7 +25,7 @@ export default function Dashboard() {
   // Fetch marketing data client-side
   useEffect(() => {
     const fetchData = async () => {
-      const url = process.env.NEXT_PUBLIC_CSV_URL || 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSCpVm8J-Om7tZw1pJXJOeXjLgheQbE8I80vWuY0VldkOw105c5S39eCFpEoJrnByH65RQald3wd-y1/pub?gid=0&single=true&output=csv';
+      const url = process.env.NEXT_PUBLIC_CSV_URL;
       try {
         const response = await fetch(url, { mode: 'cors' });
         if (!response.ok) {
