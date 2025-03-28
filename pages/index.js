@@ -28,7 +28,7 @@ export default function Dashboard() {
   // Fetch and process marketing data
   useEffect(() => {
     const fetchData = async () => {
-      const url = process.env.NEXT_PUBLIC_CSV_URL || 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSCpVm8J-Om7tZw1pJXJOeXjLgheQbE8I80vWuY0VldkOw105c5S39eCFpEoJrnByH65RQald3wd-y1/pub?gid=0&single=true&output=csv';
+      const url = process.env.NEXT_PUBLIC_CSV_URL;
       try {
         const response = await fetch(url, { mode: 'cors' });
         if (!response.ok) throw new Error(`HTTP error! Status: ${response.status} - ${response.statusText}`);
@@ -77,7 +77,7 @@ export default function Dashboard() {
   useEffect(() => {
     if (selectedDate) {
       const fetchAnalysis = async () => {
-        const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://nexxbase-dashboard.vercel.app';
+        const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
         const apiUrl = `${baseUrl}/api/getGeminiAnalysis?date=${selectedDate}`;
         try {
           const dailyData = data.filter(row => row.Date === selectedDate);
