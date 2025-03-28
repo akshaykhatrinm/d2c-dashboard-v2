@@ -1,25 +1,24 @@
 {
-    "name": "d2c-dashboard-v2-git-main-nexxbases-projects",
-    "version": "1.0.0",
-    "private": true,
-    "scripts": {
-      "dev": "next dev",
-      "build": "next build",
-      "start": "next start"
-    },
-    "dependencies": {
-      "next": "latest",
-      "react": "latest",
-      "react-dom": "latest",
-      "papaparse": "latest",
-      "recharts": "latest",
-      "nookies": "latest"
-      "@tailwindcss/postcss": "^2.0.0"
-
-    },
-    "devDependencies": {
-      "tailwindcss": "latest",
-      "postcss": "latest",
-      "autoprefixer": "latest"
-    }
+  "name": "d2c-dashboard-v2-git-main-nexxbases-projects",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "papaparse": "latest",
+    "recharts": "latest",
+    "nookies": "latest",
+    "@tailwindcss/postcss": "^2.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "latest",
+    "postcss": "latest",
+    "autoprefixer": "latest"
   }
+}
